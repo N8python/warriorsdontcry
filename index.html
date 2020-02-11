@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Warriors Don't Cry</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="pause" style="float:right;position: relative;z-index: 99;" class="w3-center w3-margin w3-card w3-button w3-round"><i class="fa fa-volume-up w3-xlarge"></i></button>
+    <div>
+        <button style="float:left;position: relative;z-index: 99;" class="w3-center w3-margin w3-card w3-button w3-round"><i class="fa fa-search w3-xlarge"></i></button>
+        <div class="w3-dropdown-hover">
+            <input id="search" autocomplete="off" class="w3-round" style="margin-top:17px; padding: 8px;" placeholder="Search...">
+            <div id="searchres" style="max-height:200px; overflow-y:scroll;" class="w3-dropdown-content w3-bar-block w3-card-4">
+            </div>
+        </div>
+    </div>
+    <!--<h1 class="w3-animate-bottom w3-margin w3-center merriweather">Warriors Don't Cry</h1>-->
+    <img class="center w3-animate-right" src="cov.png">
+    <h3 class="btn-link w3-animate-left w3-margin w3-center merriweather" style="color:maroon;cursor: pointer !important;" onclick="openCard('Melba Patillo Beals', 'People')"><em>By Melba Patillo Beals</em></h3>
+    <h5 class="w3-animate-right w3-margin w3-center merriweather" style="color:maroon"><em>A Study Guide</em></h5>
+    <div id="main"></div>
+    <audio id="music" hidden>
+        <source src="freedom.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

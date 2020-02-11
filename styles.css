@@ -1,0 +1,10 @@
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
