@@ -54,6 +54,10 @@ names.forEach(name => {
       `
     }
 })
+homeScreen += `
+    <br>
+    <p class="w3-small w3-margin merriweather">Music by The Golden Gospel Singers</p>
+    `
 const main = document.getElementById("main")
 
 function home() {
